@@ -41,7 +41,7 @@
 		\begin{cvsubsection}{Munich, Germany}{Technische Universität München}{Fall 2019 -- Present}
 			\begin{itemize}
 				\item MS.c. in Informatics, Focus on Machine Learning and Computer vision
-				\item Selected Coursework: Variational Methods in Computer Vision, Tracking and Detection in Computer Vision, Introduction to Deep learning, Techniques in Artificial Intelligence, Machine Learning in Computer Vision
+				\item Selected Coursework: Multiple View Geometry, Tracking and Detection in Computer Vision, Advanced Deep Learning in Computer Vision, Machine Learning in Computer Vision
 			\end{itemize}
 		\end{cvsubsection}
 		\begin{cvsubsection}{Cairo, Egypt}{The German University in Cairo}{Fall 2011 -- Fall 2016}
@@ -49,13 +49,19 @@
 				\item BS.c. in Mechatronics Engineering. GPA: 2.0.
 				\item Thesis Grade: 1.0
 				\item Semester abroad at Berlin Campus. Sept 2014 -- Jan 2015
-				\item Selected Coursework: Image processing, Visual Servoing, Autonomous systems, Data Structures \& Algorithms, Numerical Analysis, Classical and Modern Control.
+%				\item Selected Coursework: Image processing, Visual Servoing, Autonomous systems, Data Structures \& Algorithms, Numerical Analysis, Classical and Modern Control.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Working Student}{ESR Labs AG}{Apr. 2021 - Present}
+	\begin{cvsubsection}{Master Thesis Student}{Helmholtz Zentrum München}{Feb. 2022 - Jul. 2022}
+			Computer Vision - Institute of Computational Biology		
+			\begin{itemize}	
+			\item Thesis Title: Optimization of instance segmentation performance for fragmented and strong occlusions in neonatal incubator environments
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Working Student}{ESR Labs, Accenture}{Apr. 2021 - Feb. 2022}
 			Computer Vision - Machine Learning Team			
 			\begin{itemize}
 				\item Work on deep learning algorithms for camera centric automotive perception (Monocular Depth Estimation and Segmentation Tasks)
@@ -81,22 +87,22 @@
 		\end{cvsubsection}
 		
 		\begin{cvsubsection}{Software Engineer, Full-time}{Valeo, Automotive}{Apr. 2017 -- Sept. 2019}	
-			Integrator, SW Platform Team (Dec. 2018 -- Sept. 2019)
+			%Integrator, SW Platform Team (Dec. 2018 -- Sept. 2019)
 			\begin{itemize}
 				\item Integrating SW Platform AUTOSAR compliant SW components across different projects.
 				\item developed integration and testing environment using CANoe, CAPL scripting that reduced test release time by more than 80\%.
 				\item Projects involved; Peugeot S.A. Front Camera,Climate Control, headlights and steering ECUs.
-			\end{itemize}
-			Developer, SW Platform Team (Feb. 2018 -- Dec. 2018)
-			\begin{itemize}
+			%\end{itemize}
+			%Developer, SW Platform Team (Feb. 2018 -- Dec. 2018)
+			%\begin{itemize}
 				\item developing standardized, AUTOSAR and MISRA-C compliant SW components for ECUs diagnostics and mode management functions
 				\item Requirement analysis, functional specification, implementation, and testing of software functions.
 			\end{itemize}
-			Linux Developer, SW Innovation Team (Apr. 2017 -- Feb. 2018)
-			\begin{itemize}
-				\item benchmarking, developing and prototyping new trends in automotive industry 
-				\item Projects involved: AUTOSAR over Linux Demo, Developing AUTOSAR MCAL wrapper Layer for Integrity OS.
-			\end{itemize}
+			%Linux Developer, SW Innovation Team (Apr. 2017 -- Feb. 2018)
+			%\begin{itemize}
+			%	\item benchmarking, developing and prototyping new trends in automotive industry 
+			%	\item Projects involved: AUTOSAR over Linux Demo, Developing AUTOSAR MCAL wrapper Layer for Integrity OS.
+			%\end{itemize}
 			
 		\end{cvsubsection}
 		
@@ -119,6 +125,15 @@
 	\begin{cvsection}{Technical Experience}
 		\begin{cvsubsection}{Projects}{}{}
 			\begin{itemize}
+				\item \textbf{Monocular Depth Estimation for Autonomous Driving} (2021). \textit{Pytorch}
+					\begin{itemize}
+						\item self-supervised approach to overcome the challenge of per-pixel ground-truth depth data acquisition at scale.
+					\end{itemize}
+				\item \textbf{2D Object Tracking using Graph Neural Networks} (2021). \textit{Pytorch}
+					\begin{itemize}
+						\item Pedestrian Tracking using GNNs
+						\item Benchmarking on the public dataset "MOT Challenge dataset".
+					\end{itemize}
 				\item \textbf{Point Cloud Segmentation using Graph Neural Networks} (2020). \textit{Pytorch}
 					\begin{itemize}
 						\item using only few semantic labels, use GNN to propagate the known labels to nodes with unknown labels.
@@ -127,53 +142,58 @@
 					\begin{itemize}
 						\item Using Anchor free approach to detect bounding boxes as key point features
 					\end{itemize}
-				\item \textbf{Open source contribution} (2020). \textit{Python}
-				\begin{itemize}
-					\item Open source contribution to a project BlenderProc, an open source project maintained by German Aerospace Center (DLR) - Institute of Robotics and Mechatronics (RM)
-					\item Blender Proc is a procedural Blender pipeline for photorealistic training image generation.
-					\item implemented the first data loader that loads human poses models into scene to render human pose training images.
-					\item The data loader handles AMASS Dataset, a large database of human motion. 
-				\end{itemize}
 				\item \textbf{3D pose estimation and object instance recognition} (2019). \textit{Pytorch, Scikit-learn, pandas, python}
 				\item \textbf{Object Classification, and detection using HOG features and Random forests} (2019). \textit{OpenCV, C++}
 %				\item \textbf{AUTOSAR over Linux} (2017). running autosar over embedded Linux image. \textit{Yocto, Embedded Linux, C++, Cmake}
 			\end{itemize}
-		\end{cvsubsection}		
-	\end{cvsection}
-	
-	\begin{cvsection}{Publications}
-		\begin{cvsubsection}{}{}{}
-			\textbf{Rescue Missions Bots using Active SLAM and Map Feature Extraction}
-			\begin{itemize}
-				\item 2016 | International Conference on Control, Mechatronics and Automation.
-				\item Authors: M Nabil,  M. H. Kassem, A Bahnasy, Omar M. Shehata, El-Sayed I. Morgan
-			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Open Source Contributions}{}{}		
+		\begin{itemize}
+						\item \textbf{BlenderProc} (2020). \textit{Python}
+				\begin{itemize}
+					\item Open source project maintained by German Aerospace Center (DLR) - Institute of Robotics and Mechatronics (RM)
+					\item Blender Proc is a procedural Blender pipeline for photorealistic training image generation.
+					\item implemented the first data loader that loads human poses models into scene to render human pose training images.
+					\item The data loader handles AMASS Dataset, a large database of human motion.
+				\end{itemize}
+\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
+	
+	%\begin{cvsection}{Publications}
+	%	\begin{cvsubsection}{}{}{}
+	%		\textbf{Rescue Missions Bots using Active SLAM and Map Feature Extraction}
+	%		\begin{itemize}
+	%			\item 2016 | International Conference on Control, Mechatronics and Automation.
+	%			\item Authors: M Nabil,  M. H. Kassem, A Bahnasy, Omar M. Shehata, El-Sayed I. Morgan
+	%		\end{itemize}
+	%	\end{cvsubsection}
+	%\end{cvsection}
 	
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
 				\item Languages: C++, Python
-				\item Tools/Frameworks/Libraries: PyTorch, Numpy, Git, Linux
+				\item Tools/Frameworks/Libraries: PyTorch, Git, Linux
+				\item Infrastructure: SLURM, GCP, AWS
 				\item Automotive Technologies: AUTOSAR, CANoe, CAPL Scripting
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 
-\iffalse
-	\begin{cvsection}{Extra-Curricular Activities}
-		\begin{cvsubsection}{Volunteering}{}{}	
-			
-			\begin{itemize}
-				\item Dive In TEDxTUM Event | Operations Volunteer | Munich, Nov. 2019
-				\item Coral Reefs Cleaning campaign | SCUBA Diver Volunteer | Nuweiba, RedSea, Egypt | Mar. 2019
-				\item Cairo Runners Cairo Half Marathon 2016 | Operations Volunteer | Cairo, Apr. 2016
-				\item Alashanek Ya Balady for Sustainable Development, NGO | Operations Volunteer  Nov. 2013 -- Jun. 2016
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-\fi
+
+	%\begin{cvsection}{Extra-Curricular Activities}
+	%	\begin{cvsubsection}{Volunteering}{}{}	
+	%		
+	%		\begin{itemize}
+	%			\item Dive In TEDxTUM Event | Operations Volunteer | Munich, Nov. 2019
+	%			\item Coral Reefs Cleaning campaign | SCUBA Diver Volunteer | Nuweiba, RedSea, Egypt | Mar. 2019
+	%			\item Cairo Runners Cairo Half Marathon 2016 | Operations Volunteer | Cairo, Apr. 2016
+	%			\item Alashanek Ya Balady for Sustainable Development, NGO | Operations Volunteer  Nov. 2013 -- Jun. 2016
+	%		\end{itemize}
+	%	\end{cvsubsection}
+	%\end{cvsection}
+
 	
 	
 \end{document}
